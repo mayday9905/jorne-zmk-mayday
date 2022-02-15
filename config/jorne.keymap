@@ -15,7 +15,7 @@
 #define RSE 2
 #define CODE 3
 #define CDE_S 4
-#define  GM 5
+#define GM 5
 #define GM_S 6
 #define ADJ 7
 
@@ -76,8 +76,8 @@
                         bindings = <
           &kp LWIN &kp GRAVE  &kp N1 &kp W &kp N2 &kp N3 &kp N4               &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
                    &kp LSHFT  &kp A  &kp S &kp D  &kp F  &kp G                &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-                   &kp LCTRL  &kp Z &kp X &kp C &kp V &kp B               &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
-                         &lt RSE TAB &kp LALT &lt LWR ENTER               &lt LWR SPACE &mt RSHFT BSPC &lt RSE DEL
+                   &kp LCTRL  &kp Z &kp X &kp C &kp V &kp B                   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
+                         &lt RSE TAB &kp LALT &lt LWR ENTER                   &lt LWR SPACE &mt RSHFT BSPC &lt RSE DEL
                         >;
                 };
                         adjust_layer {
