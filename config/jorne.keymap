@@ -65,8 +65,8 @@
                 raise_layer {
                         bindings = <
    &kp LG(GRAVE) &kp TAB    &kp SLASH    &kp N7 &kp N8 &kp N9 &kp MINUS        &kp C_VOL_UP &kp LC(F5) &kp LC(PSCRN) &kp PG_UP &kp F3 &kp DEL &trans
-          &mt LCTRL EQUAL       &kp STAR &kp N4 &kp N5 &kp N6 &kp PLUS         &kp C_MUTE   &kp LEFT &kp LPAR  &kp RPAR &kp INS  &mt RCTRL K_APP
-          &kp LA(LSHIFT)        &kp N0   &kp N1 &kp N2 &kp N3 &kp KP_DOT       &kp C_VOL_DN &kp END  &kp LBRC  &kp RBRC &kp PAUSE_BREAK &kp LA(F4) 
+          &mt LCTRL EQUAL       &kp STAR &kp N4 &kp N5 &kp N6 &kp PLUS         &kp C_MUTE   &kp LEFT &kp LPAR  &kp RPAR &kp PIPE  &mt RCTRL K_APP
+          &kp LA(LSHIFT)        &kp N0   &kp N1 &kp N2 &kp N3 &kp KP_DOT       &kp C_VOL_DN &kp END  &kp LBRC  &kp RBRC &kp AMPS &kp LA(F4) 
                                         &trans &kp LA(TAB) &lt ADJ RET    &lt ADJ ESC &trans &lt ADJ RIGHT
                         >;
                 };
