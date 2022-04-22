@@ -14,6 +14,7 @@
 #define ADD 1
 #define GM 2
 #define GM_A 3
+#define ADJ 4
 
 / {
         keymap {
@@ -29,10 +30,10 @@
                 };
                 additional_layer {
                         bindings = <
-   &kp ESC  &kp DEL    &kp SLASH &kp N7 &kp N8 &kp N9 &kp MINUS               &kp F7 &kp F8  &kp F9 &kp F10 &none &kp DEL  &mt BSPC RBKT
-            &kp LSHFT  &kp STAR  &kp N4 &kp N5 &kp N6 &kp PLUS                &kp F4 &kp F5  &kp F6 &kp F11 &none &kp SQT
-            &trans     &kp N0    &kp N1 &kp N2 &kp N3 &kp KP_DOT              &kp F1 &kp F2  &kp F3 &kp F12 &none     &kp BSLH
-                                   &kp LALT &kp TAB &kp RET              &kp LCTRL &kp TAB &kp LALT
+   &kp ESC  &kp DEL    &kp SLASH &kp N7 &kp N8 &kp N9 &kp MINUS               &kp F7 &kp F8  &kp F9 &kp F10 &kp LC(PSCRN) &kp DEL  &mt BSPC RBKT
+            &kp LSHFT  &kp STAR  &kp N4 &kp N5 &kp N6 &kp PLUS                &kp F4 &kp F5  &kp F6 &kp F11 &kp LS(PSCRN) &kp SQT
+            &trans     &kp N0    &kp N1 &kp N2 &kp N3 &kp KP_DOT              &kp F1 &kp F2  &kp F3 &kp F12 &kp PSCRN     &kp BSLH
+                                   &lt ADJ LALT &kp TAB &kp RET              &kp LCTRL &kp TAB &kp LALT
                         >;
                 };
                 gm_layer {
@@ -49,6 +50,14 @@
             &kp LSHFT &kp A  &kp S &kp D  &kp F  &kp G  &kp H         &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
             &kp LCTRL &kp Z  &kp X &kp C  &kp V  &kp B  &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
                                     &kp LALT &kp TAB &kp SPACE      &kp SPACE &kp LEFT &kp RIGHT
+                        >;
+                };
+                adjust_layer {
+                        bindings = <
+   &reset &bootloader  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF &rgb_ug RGB_HUI   &rgb_ug RGB_HUD  &rgb_ug RGB_SAI         &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &rgb_ug RGB_SPI   &rgb_ug RGB_SPD  &bootloader &reset
+          &bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4            &bt BT_SEL 4     &bt BT_SEL 3     &bt BT_SEL 2      &bt BT_SEL 1      &bt BT_SEL 0     &bt BT_CLR
+          &none        &none             &none          &to DEF             &none          &out OUT_TOG            &out OUT_TOG     &none           &none             &none             &none            &none
+                                                        &trans            &to GM         &trans             &trans           &to GM     &trans
                         >;
                 };
         };
