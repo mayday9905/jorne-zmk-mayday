@@ -13,7 +13,7 @@
 #define DEF 0
 #define ADD 1
 #define GM 2
-#define GMA 3
+#define GM_A 3
 
 / {
         keymap {
